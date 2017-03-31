@@ -15,6 +15,8 @@
 
 // 读条 + 文本提醒 默认不提供消失
 + (instancetype)showWaittingHUDWithMeessage:(NSString *)message;
+// 进度条
++ (instancetype)showProgressWithMessage:(NSString *)message;
 
 // 隐藏
 - (void)dismissAnimated:(BOOL)animated;

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B2FB367473F8D9A679879BAED993A4FDC338CAC5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D3644BA89F23467397EAF805EC468FA79288E3DC" : 9223372036854775807,
+    "B2FB367473F8D9A679879BAED993A4FDC338CAC5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "20C74E48-90D0-41F0-88C4-6F82FF15BFEB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D3644BA89F23467397EAF805EC468FA79288E3DC" : "",
+    "B2FB367473F8D9A679879BAED993A4FDC338CAC5" : "SFJMBProgressHUDDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SFJMBProgressHUDDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SFJMBProgressHUDDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/shafujiu\/SFJMBProgressHUDDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2FB367473F8D9A679879BAED993A4FDC338CAC5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/shafujiu\/Code.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D3644BA89F23467397EAF805EC468FA79288E3DC"
+    }
+  ]
+}

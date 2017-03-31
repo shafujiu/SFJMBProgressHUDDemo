@@ -11,11 +11,12 @@
 static CGFloat const SFJDefaultDelay = 1.0; // 默认显示时间
 static CGFloat const SFJDefaultMargin = 10; // 提示框边距
 
+
 @implementation MBProgressHUD (Add)
 
 #pragma mark - 显示单独的消息
 + (instancetype)showHUDWithMessage:(NSString *)message{
-  
+    
     return [self showHUDWithMessage:message afterDelay:SFJDefaultDelay];
 };
 
@@ -36,12 +37,20 @@ static CGFloat const SFJDefaultMargin = 10; // 提示框边距
 
 #pragma mark - 显示消息 + 进度读条
 + (instancetype)showWaittingHUDWithMeessage:(NSString *)message{
-    
+    return [self p_showProgressWithMessage:message progressHUDMode:MBProgressHUDModeIndeterminate];
+}
+
++ (instancetype)showProgressWithMessage:(NSString *)message{
+    return [self p_showProgressWithMessage:message progressHUDMode:MBProgressHUDModeAnnularDeterminate];
+}
+
++ (instancetype)p_showProgressWithMessage:(NSString *)message progressHUDMode:(MBProgressHUDMode)mode{
     MBProgressHUD *hud = [self p_creatHUD];
     hud.label.text = message;
-    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.mode = mode;
     return hud;
 }
+
 
 + (instancetype)p_creatHUD{
     dispatch_queue_t globalqueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
