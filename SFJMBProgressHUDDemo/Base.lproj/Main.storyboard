@@ -42,11 +42,20 @@
                                     <action selector="loadingTextHUD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGQ-4n-Ips"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDp-7E-Rmi">
+                                <rect key="frame" x="156" y="221" width="62" height="30"/>
+                                <state key="normal" title="进度指示"/>
+                                <connections>
+                                    <action selector="progress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="91k-KW-vOf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pbm-cz-ajr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0QR-71-6cc"/>
+                            <constraint firstItem="KDp-7E-Rmi" firstAttribute="centerX" secondItem="3v5-B5-FgW" secondAttribute="centerX" id="5B0-xU-s1u"/>
                             <constraint firstItem="ewk-R7-o5r" firstAttribute="top" secondItem="pbm-cz-ajr" secondAttribute="bottom" constant="28" id="5Yt-Es-Feg"/>
+                            <constraint firstItem="KDp-7E-Rmi" firstAttribute="top" secondItem="3v5-B5-FgW" secondAttribute="bottom" constant="15" id="Dmy-Kj-Lxk"/>
                             <constraint firstItem="3v5-B5-FgW" firstAttribute="top" secondItem="ewk-R7-o5r" secondAttribute="bottom" constant="20" id="WZy-Or-cHd"/>
                             <constraint firstItem="3v5-B5-FgW" firstAttribute="centerX" secondItem="ewk-R7-o5r" secondAttribute="centerX" id="b1X-fz-I1E"/>
                             <constraint firstItem="ewk-R7-o5r" firstAttribute="centerX" secondItem="pbm-cz-ajr" secondAttribute="centerX" id="rkI-KS-bBq"/>
