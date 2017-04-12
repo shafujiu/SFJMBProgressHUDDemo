@@ -25,7 +25,13 @@
 }
 
 - (IBAction)testBtnAct:(UIButton *)sender {
-    [MBProgressHUD showHUDWithMessage:@"简单文字HUD,1秒自动隐藏"];
+    
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD showHUDWithMessage:@"简单文字HUD,1秒自动隐藏"];
+        });
+    });
 }
 
 - (IBAction)loadingHUD:(id)sender {

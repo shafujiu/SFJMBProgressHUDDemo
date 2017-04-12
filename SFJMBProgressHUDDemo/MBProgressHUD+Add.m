@@ -52,18 +52,15 @@ static CGFloat const SFJDefaultMargin = 10; // 提示框边距
 }
 
 + (instancetype)p_creatHUD{
-    dispatch_queue_t globalqueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    __block MBProgressHUD *hud;
-    dispatch_sync(globalqueue, ^{
-        UIWindow *keyWind = [[UIApplication sharedApplication] keyWindow];
-        NSAssert(keyWind, @"keyWindow must not be nil");
-        hud = [MBProgressHUD showHUDAddedTo:keyWind animated:NO];
-        // 提醒的内容的背景
-        hud.bezelView.backgroundColor = [UIColor blackColor];
-        // 文字 + 进度条颜色
-        hud.contentColor = [UIColor whiteColor];
-        hud.margin = SFJDefaultMargin;
-    });
+    
+    UIWindow *keyWind = [[UIApplication sharedApplication] keyWindow];
+    NSAssert(keyWind, @"keyWindow must not be nil");
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:keyWind animated:NO];
+    // 提醒的内容的背景
+    hud.bezelView.backgroundColor = [UIColor blackColor];
+    // 文字 + 进度条颜色
+    hud.contentColor = [UIColor whiteColor];
+    hud.margin = SFJDefaultMargin;
     return hud;
 }
 
