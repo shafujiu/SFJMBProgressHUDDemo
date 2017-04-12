@@ -50,4 +50,14 @@ MBPregressHUD+Add 该分类主要提供6个方法
 ```
 
 > 在上面的函数，添加的线程是无意义的，因为dispatch_sync 串行，完全没有改变执行的顺序。只是将创建的过程放到了globalqueue队列里面。
+使用的时候，无论是在什么线程都没关系，只要最后的使用保证是在主线程就行
+例如：
+```Objective-c
+dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_async(queue, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD showHUDWithMessage:@"简单文字HUD,1秒自动隐藏"];
+        });
+    });
+```
 
